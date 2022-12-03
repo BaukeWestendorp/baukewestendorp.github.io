@@ -1,0 +1,17 @@
+[
+	{
+		"date": "02-12-2022",
+		"description": "Een poster die ik samen met een vriendin heb gemaakt voor een andere vriendin.",
+		"images": ["dance.jpg"]
+	},
+	{
+		"date": "23-10-2022",
+		"description": "Een foto van mij in Leeuwarden voor de opnames van SONO's eerste single 'Sweat'.",
+		"images": ["bar.jpg"]
+	},
+	{
+		"date": "18-10-2022",
+		"description": "Een foto van een bergweg zuidoost van Genève die ik heb gemaakt tijdens de reis samen met het FIRST Robotics team Impossible Robotics waar ik mentor bij ben. We waren in Genève voor de FIRST Global wedstrijden waarbij wij Nederland vertegenwoordigden.",
+		"images": ["bergweg.jpg"]
+	}
+]

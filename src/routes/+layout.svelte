@@ -2,7 +2,7 @@
 	import '$lib/styles/main.css';
 	import '$lib/styles/typography.css';
 
-	import NavBar from '$lib/components/NavBar.svelte';
+	import NavBar from '$lib/nav/NavBar.svelte';
 </script>
 
 <div class="layout">
