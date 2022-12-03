@@ -5,6 +5,10 @@
 	import NavBar from '$lib/nav/NavBar.svelte';
 </script>
 
+<svelte:head>
+	<meta name="theme-color" content="#29bb8e" />
+</svelte:head>
+
 <div class="layout">
 	<h1>Bauke Westendorp</h1>
 
