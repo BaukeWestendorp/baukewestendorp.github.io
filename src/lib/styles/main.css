@@ -19,3 +19,17 @@ body {
 	background: black;
 	color: white;
 }
+
+button {
+	background: var(--c-accent);
+	color: var(--c-primary);
+
+	border: none;
+	border-radius: 3px;
+
+	padding: 6px 12px;
+
+	font-size: 14px;
+	font-family: var(--f-sans-serif);
+	font-weight: bold;
+}
