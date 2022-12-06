@@ -125,12 +125,12 @@
     "file": "_app/immutable/assets/_page-1f447b5a.css",
     "src": "src/routes/+page.css"
   },
-  "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-bf339f9f.css",
-    "src": "src/routes/+layout.css"
-  },
   "src/routes/over/+page.css": {
     "file": "_app/immutable/assets/_page-b9bb0cd7.css",
     "src": "src/routes/over/+page.css"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-bf339f9f.css",
+    "src": "src/routes/+layout.css"
   }
 }
