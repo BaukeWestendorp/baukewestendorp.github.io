@@ -11,7 +11,7 @@
 
 <div class="layout">
 	<header>
-		<h1>Bauke Westendorp</h1>
+		<h1><a href="/">Bauke Westendorp</a></h1>
 		<NavBar />
 	</header>
 
@@ -25,6 +25,11 @@
 
 	h1 {
 		padding: 0.5rem 0;
+	}
+
+	a {
+		color: var(--c-primary);
+		text-decoration: none;
 	}
 
 	.layout {
