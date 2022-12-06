@@ -1,4 +1,4 @@
-# baukewestendorp.nl
+# baukewestendorp.github.io
 
 This is the Svelte project for my personal website.
 

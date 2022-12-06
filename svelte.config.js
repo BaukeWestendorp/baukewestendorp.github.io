@@ -15,7 +15,7 @@ const config = {
 			assets: 'docs'
 		}),
 		paths: {
-			base: dev ? '' : '/baukewestendorp.nl'
+			base: dev ? '' : '/baukewestendorp.github.io'
 		}
 	}
 };
