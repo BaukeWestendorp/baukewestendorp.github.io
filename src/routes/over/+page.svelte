@@ -18,4 +18,8 @@
 	img {
 		width: 100%;
 	}
+
+	p {
+		margin-top: 2rem;
+	}
 </style>
