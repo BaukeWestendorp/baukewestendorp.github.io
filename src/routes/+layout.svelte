@@ -10,14 +10,23 @@
 </svelte:head>
 
 <div class="layout">
-	<h1>Bauke Westendorp</h1>
-
-	<NavBar />
+	<header>
+		<h1>Bauke Westendorp</h1>
+		<NavBar />
+	</header>
 
 	<slot />
 </div>
 
 <style>
+	header {
+		border-bottom: 2px dashed var(--c-accent);
+	}
+
+	h1 {
+		padding: 0.5rem 0;
+	}
+
 	.layout {
 		max-width: 34rem;
 		padding: 1rem;

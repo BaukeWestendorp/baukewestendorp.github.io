@@ -6,6 +6,9 @@
 </nav>
 
 <style>
+	nav {
+		padding-bottom: 2rem;
+	}
 	ul {
 		list-style: none;
 		display: flex;

@@ -14,3 +14,10 @@
 		<PostComponent {post} />
 	{/each}
 </div>
+
+<style>
+	.posts {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+</style>
