@@ -7,6 +7,10 @@
 	let posts = data.posts;
 </script>
 
+<svelte:head>
+	<title>Bauke Westendorp: Expositie</title>
+</svelte:head>
+
 <h2>Expositie</h2>
 
 <div class="posts">
