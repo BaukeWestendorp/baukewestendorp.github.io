@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Post } from './types';
+	import { base } from '$app/paths';
 
 	export let post: Post;
 
@@ -8,14 +9,14 @@
 
 <img
 	class="thumbnail"
-	src="/posts/images/{post.image}"
+	src="{base}/posts/images/{post.image}"
 	alt={post.image}
 	on:click={() => (isSelected = true)}
 />
 
 {#if isSelected}
 	<div class="enlargend" on:click={() => (isSelected = false)}>
-		<img src="/posts/images/{post.image}" alt={post.image} />
+		<img src="{base}/posts/images/{post.image}" alt={post.image} />
 		<button>Close</button>
 	</div>
 {/if}

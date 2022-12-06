@@ -3,6 +3,8 @@
 	import '$lib/styles/typography.css';
 
 	import NavBar from '$lib/nav/NavBar.svelte';
+
+	import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -11,7 +13,7 @@
 
 <div class="layout">
 	<header>
-		<h1><a href="/">Bauke Westendorp</a></h1>
+		<h1><a href="{base}/">Bauke Westendorp</a></h1>
 		<NavBar />
 	</header>
 
