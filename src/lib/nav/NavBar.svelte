@@ -1,7 +1,7 @@
 <nav>
 	<ul>
 		<li><a href="/">expositie</a></li>
-		<li><a href="/over">over</a></li>
+		<li><a href="/over">over mij</a></li>
 	</ul>
 </nav>
 

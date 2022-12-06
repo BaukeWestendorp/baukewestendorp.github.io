@@ -2,7 +2,7 @@
 	<title>Bauke Westendorp: Over</title>
 </svelte:head>
 
-<h2>Over</h2>
+<h2>Over Mij</h2>
 
 <div class="over">
 	<img src="/pages/over/bauke.jpg" alt="Bauke" />
