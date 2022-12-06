@@ -3,10 +3,13 @@
 	--c-primary: white;
 	--c-secondary: gray;
 	--c-accent: #29aa90;
+
+	--f-sans-serif: 'Helvetica Neue', 'Helvetica', sans-serif;
+	--f-serif: Georgia, 'Times New Roman', serif;
 }
 
 * {
-	font-family: Georgia, 'Times New Roman', serif;
+	font-family: var(--f-serif);
 
 	padding: 0;
 	margin: 0;
