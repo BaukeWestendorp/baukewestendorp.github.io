@@ -4,10 +4,11 @@
 	export let post: Post;
 </script>
 
-<img src="/posts/{post.date}/images/{post.images[0]}" alt={post.images[0]} />
+<img src="/posts/images/{post.image}" alt={post.image} />
 
 <style>
 	img {
 		width: 100%;
+		height: 100%;
 	}
 </style>

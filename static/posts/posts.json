@@ -1,14 +1,18 @@
 [
 	{
+		"date": "04-12-2022",
+		"image": "sweat.jpg"
+	},
+	{
 		"date": "02-12-2022",
-		"images": ["dance.jpg"]
+		"image": "dance.jpg"
 	},
 	{
 		"date": "01-12-2022",
-		"images": ["piano.jpg"]
+		"image": "piano.jpg"
 	},
 	{
 		"date": "18-10-2022",
-		"images": ["bergweg.jpg"]
+		"image": "bergweg.jpg"
 	}
 ]
