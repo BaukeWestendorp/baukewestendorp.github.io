@@ -5,6 +5,18 @@
 	export let post: Post;
 
 	let isSelected = false;
+
+	let formattedDate: string;
+	$: {
+		const splitDate = post.date.split('-');
+		const date = new Date(+splitDate[2], splitDate[1] - 1, +splitDate[0]);
+		formattedDate = date.toLocaleDateString('nl-NL', {
+			weekday: 'long',
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric'
+		});
+	}
 </script>
 
 <img
@@ -16,6 +28,7 @@
 
 {#if isSelected}
 	<div class="enlargend" on:click={() => (isSelected = false)}>
+		<h3>{formattedDate}</h3>
 		<img src="{base}/posts/images/{post.image}" alt={post.image} />
 		<button>Close</button>
 	</div>
