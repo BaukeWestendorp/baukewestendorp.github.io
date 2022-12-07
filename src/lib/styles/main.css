@@ -3,6 +3,7 @@
 	--c-primary: white;
 	--c-secondary: gray;
 	--c-accent: #29aa90;
+	--c-accent-hover: #218c76;
 
 	--f-sans-serif: 'Helvetica Neue', 'Helvetica', sans-serif;
 	--f-serif: Georgia, 'Times New Roman', serif;
@@ -32,4 +33,10 @@ button {
 	font-size: 14px;
 	font-family: var(--f-sans-serif);
 	font-weight: bold;
+
+	cursor: pointer;
+}
+
+button:hover {
+	background: var(--c-accent-hover);
 }
