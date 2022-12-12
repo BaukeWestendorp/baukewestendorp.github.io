@@ -17,23 +17,23 @@
 		foto, video, kunst en voornamelijk programmeren met een mespuntje zwarte peper.
 	</p>
 
-    <h3>Coole projecten die mij aanspreken of waar ik mee te maken heb</h3>
-    <ul>
-        <li><a href="https://dwangschematiek.nl">dwangschematiek.nl</a></li>
-        <li><a href="https://impossiblerobotics.nl">impossiblerobotics.nl</a></li>
-    </ul>
+	<h3>Coole projecten die mij aanspreken of waar ik mee te maken heb</h3>
+	<ul>
+		<li><a href="https://dwangschematiek.nl">dwangschematiek.nl</a></li>
+		<li><a href="https://impossiblerobotics.nl">impossiblerobotics.nl</a></li>
+	</ul>
 </div>
 
 <style>
 	img {
 		width: 100%;
 	}
-    
-    p {
-        margin-top: 1rem;
-    }
 
-    ul {
-        list-style: lower-roman;
-    }
+	p {
+		margin-top: 1rem;
+	}
+
+	ul {
+		list-style: lower-roman;
+	}
 </style>
