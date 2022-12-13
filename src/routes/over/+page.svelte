@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import Link from '$lib/link/Link.svelte';
 </script>
 
 <svelte:head>
@@ -19,8 +20,10 @@
 
 	<h3>Coole projecten die mij aanspreken of waar ik mee te maken heb</h3>
 	<ul>
-		<li><a href="https://dwangschematiek.nl">dwangschematiek.nl</a></li>
-		<li><a href="https://impossiblerobotics.nl">impossiblerobotics.nl</a></li>
+		<li><Link openInNewTab extern href="https://dwangschematiek.nl">dwangschematiek.nl</Link></li>
+		<li>
+			<Link openInNewTab extern href="https://impossiblerobotics.nl">impossiblerobotics.nl</Link>
+		</li>
 	</ul>
 </div>
 

@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import Link from '$lib/link/Link.svelte';
 </script>
 
 <nav>
 	<ul>
-		<li><a href="{base}/">expositie</a></li>
-		<li><a href="{base}/over">over mij</a></li>
+		<li><Link href="/">expositie</Link></li>
+		<li><Link href="/over">over mij</Link></li>
 	</ul>
 </nav>
 
