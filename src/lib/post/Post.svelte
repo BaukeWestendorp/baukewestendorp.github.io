@@ -86,4 +86,8 @@
 		width: 100%;
 		max-width: 80rem;
 	}
+
+	.enlargend h3 {
+		padding: 0;
+	}
 </style>
