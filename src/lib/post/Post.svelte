@@ -83,8 +83,8 @@
 	}
 
 	.enlargend img {
-		width: 100%;
-		max-width: 80rem;
+		max-height: 100%;
+		max-width: 100%;
 	}
 
 	.enlargend h3 {
