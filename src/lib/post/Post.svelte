@@ -4,6 +4,8 @@
 
 	export let post: Post;
 
+	const isQuote = post.quote != null;
+
 	let isSelected = false;
 
 	let formattedDate: string;
@@ -19,12 +21,16 @@
 	}
 </script>
 
-<img
-	class="thumbnail"
-	src="{base}/posts/images/{post.image}"
-	alt={post.image}
-	on:click={() => (isSelected = true)}
-/>
+{#if isQuote}
+	<p class="quote">"{post.quote}"</p>
+{:else}
+	<img
+		class="thumbnail"
+		src="{base}/posts/images/{post.image}"
+		alt={post.image}
+		on:click={() => (isSelected = true)}
+	/>
+{/if}
 
 {#if isSelected}
 	<div class="enlargend" on:click={() => (isSelected = false)}>
@@ -35,6 +41,14 @@
 {/if}
 
 <style>
+	.quote {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		font-size: 18px;
+	}
+
 	.thumbnail {
 		width: 100%;
 		height: 100%;
