@@ -9,12 +9,15 @@ export class Raymarcher {
 	}
 
 	calculateFrame() {
-		const worldObject: WorldObject = new Sphere({ x: 200, y: 170, z: 150 }, 100);
+		const worldObjects: WorldObject[] = [
+			new Sphere({ x: 200, y: 170, z: 150 }, 100),
+			new Sphere({ x: 500, y: 320, z: 250 }, 80)
+		];
 
 		for (let y = 0; y < this.renderer.ctx.canvas.height; y++) {
 			for (let x = 0; x < this.renderer.ctx.canvas.width; x++) {
 				const ray = new Ray(x, y);
-				ray.march(worldObject, 1, 1000);
+				ray.march(worldObjects, 1, 1000);
 
 				this.renderer.setPixel(x, y, [0, ray.depth, 0, 255]);
 			}

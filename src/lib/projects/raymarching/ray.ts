@@ -6,11 +6,18 @@ export class Ray {
 
 	constructor(public x: number, public y: number) {}
 
-	march(worldObject: WorldObject, minDelta: number, maxDepth: number) {
-		const delta = worldObject.sdf({ x: this.x, y: this.y, z: this.depth });
-		this.depth += delta;
+	march(worldObjects: WorldObject[], minDelta: number, maxDepth: number) {
+		let smallestDelta = maxDepth;
+		for (const worldObject of worldObjects) {
+			const delta = worldObject.sdf({ x: this.x, y: this.y, z: this.depth });
+			if (delta < smallestDelta) {
+				smallestDelta = delta;
+			}
+		}
 
-		if (delta <= minDelta) return;
+		this.depth += smallestDelta;
+
+		if (smallestDelta <= minDelta) return;
 
 		if (this.depth > maxDepth || this.iteration > 100) {
 			this.depth = -1;
@@ -19,6 +26,6 @@ export class Ray {
 
 		this.iteration++;
 
-		this.march(worldObject, minDelta, maxDepth);
+		this.march(worldObjects, minDelta, maxDepth);
 	}
 }
