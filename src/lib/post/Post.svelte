@@ -5,14 +5,14 @@
 	export let post: Post;
 
 	const isQuote = post.quote != null;
+	const formattedDate = getFormattedDate(post.date);
 
 	let isSelected = false;
 
-	let formattedDate: string;
-	$: {
-		const splitDate = post.date.split('-');
-		const date = new Date(+splitDate[2], splitDate[1] - 1, +splitDate[0]);
-		formattedDate = date.toLocaleDateString('nl-NL', {
+	function getFormattedDate(dateString: string) {
+		const splitDate = dateString.split('-');
+		const date = new Date(+splitDate[2], +splitDate[1] - 1, +splitDate[0]);
+		return date.toLocaleDateString('nl-NL', {
 			weekday: 'long',
 			year: 'numeric',
 			month: 'long',
