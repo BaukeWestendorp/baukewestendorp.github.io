@@ -4,10 +4,10 @@ export class Ray {
 	public depth: number = 0;
 	public iteration: number = 0;
 
-	constructor(public x: number) {}
+	constructor(public x: number, public y: number) {}
 
 	march(worldObject: WorldObject, minDelta: number, maxDepth: number) {
-		const delta = worldObject.sdf({ x: this.x, y: this.depth });
+		const delta = worldObject.sdf({ x: this.x, y: this.y, z: this.depth });
 		this.depth += delta;
 
 		if (delta <= minDelta) return;

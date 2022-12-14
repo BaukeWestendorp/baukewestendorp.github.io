@@ -1,17 +1,17 @@
 <script lang="ts">
-	import { Raymarcher } from "$lib/projects/raymarching/raymarcher";
-	import { Renderer } from "$lib/projects/raymarching/renderer";
-	import { onMount } from "svelte";
+	import { Raymarcher } from '$lib/projects/raymarching/raymarcher';
+	import { Renderer } from '$lib/projects/raymarching/renderer';
+	import { onMount } from 'svelte';
 
 	let canvas!: HTMLCanvasElement;
 	let wrapper!: HTMLElement;
 	let renderer: Renderer;
 
 	onMount(() => {
-		canvas.setAttribute("width", window.getComputedStyle(wrapper).width);
-		canvas.setAttribute("height", window.getComputedStyle(wrapper).height);
+		canvas.setAttribute('width', window.getComputedStyle(wrapper).width);
+		canvas.setAttribute('height', window.getComputedStyle(wrapper).height);
 
-		const context = canvas.getContext("2d");
+		const context = canvas.getContext('2d');
 		if (context) {
 			renderer = new Renderer(context);
 
@@ -26,8 +26,7 @@
 <h2>Ray-marching</h2>
 
 <div bind:this={wrapper} class="wrapper">
-	<canvas bind:this={canvas}>
-	</canvas>
+	<canvas bind:this={canvas} />
 </div>
 
 <style>
