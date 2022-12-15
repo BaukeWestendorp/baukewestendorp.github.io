@@ -1,4 +1,5 @@
 import { Ray } from '$lib/projects/raymarching/ray';
+import type { Color } from '$lib/projects/raymarching/types';
 import { Sphere } from '$lib/projects/raymarching/worldObject';
 import type { WorldObject } from '$lib/projects/raymarching/worldObject';
 import type { Renderer } from '$lib/projects/raymarching/renderer';
@@ -20,8 +21,16 @@ export class Raymarcher {
 				ray.march(worldObjects, 1, 1000);
 
 				if (ray.depth > 0) {
-					const color = ray.closestWorldObject?.color ?? [255, 255, 255];
+					const baseColor = ray.closestWorldObject?.color ?? [255, 255, 255];
+					const lightingFactor = ray.depth / (ray.closestWorldObject?.radius * 2);
+					const color: Color = [
+						baseColor[0] * lightingFactor,
+						baseColor[1] * lightingFactor,
+						baseColor[2] * lightingFactor
+					];
 					this.renderer.setPixel(x, y, color);
+				} else {
+					this.renderer.setPixel(x, y, [ray.iteration * 3, ray.iteration * 3, ray.iteration * 3]);
 				}
 			}
 		}
