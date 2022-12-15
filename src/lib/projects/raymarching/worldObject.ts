@@ -1,16 +1,17 @@
-import type { Position } from '$lib/projects/raymarching/types';
+import type { Color, Position } from '$lib/projects/raymarching/types';
 
 export abstract class WorldObject {
-	protected constructor(public position: Position) {
+	protected constructor(public position: Position, public color: Color) {
 		this.position = position;
+		this.color = color;
 	}
 
 	abstract sdf(otherPosition: Position): number;
 }
 
 export class Sphere extends WorldObject {
-	constructor(position: Position, public radius: number) {
-		super(position);
+	constructor(position: Position, color: Color, public radius: number) {
+		super(position, color);
 		this.radius = radius;
 	}
 

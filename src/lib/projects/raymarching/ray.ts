@@ -3,6 +3,7 @@ import type { WorldObject } from '$lib/projects/raymarching/worldObject';
 export class Ray {
 	public depth: number = 0;
 	public iteration: number = 0;
+	public closestWorldObject?: WorldObject;
 
 	constructor(public x: number, public y: number) {}
 
@@ -12,6 +13,7 @@ export class Ray {
 			const delta = worldObject.sdf({ x: this.x, y: this.y, z: this.depth });
 			if (delta < smallestDelta) {
 				smallestDelta = delta;
+				this.closestWorldObject = worldObject;
 			}
 		}
 
