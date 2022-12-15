@@ -1,6 +1,6 @@
 import { Ray } from '$lib/projects/raymarching/ray';
 import type { Color } from '$lib/projects/raymarching/types';
-import { Sphere } from '$lib/projects/raymarching/worldObject';
+import { Plane, Sphere } from '$lib/projects/raymarching/worldObject';
 import type { WorldObject } from '$lib/projects/raymarching/worldObject';
 import type { Renderer } from '$lib/projects/raymarching/renderer';
 
@@ -12,7 +12,8 @@ export class Raymarcher {
 	calculateFrame() {
 		const worldObjects: WorldObject[] = [
 			new Sphere({ x: 200, y: 170, z: 150 }, [255, 127, 0], 100),
-			new Sphere({ x: 500, y: 320, z: 250 }, [0, 255, 127], 80)
+			new Sphere({ x: 500, y: 320, z: 250 }, [0, 255, 127], 80),
+			new Plane({ x: 0, y: -100, z: 0 }, [127, 200, 127])
 		];
 
 		for (let y = 0; y < this.renderer.ctx.canvas.height; y++) {

@@ -1,7 +1,7 @@
 import type { Color, Position } from '$lib/projects/raymarching/types';
 
 export abstract class WorldObject {
-	protected constructor(public position: Position, public color: Color) {
+	constructor(public position: Position, public color: Color) {
 		this.position = position;
 		this.color = color;
 	}
@@ -21,5 +21,11 @@ export class Sphere extends WorldObject {
 		const dz = otherPosition.z - this.position.z;
 		const squaredDistance = dx * dx + dy * dy + dz * dz;
 		return Math.sqrt(squaredDistance) - this.radius;
+	}
+}
+
+export class Plane extends WorldObject {
+	public sdf(otherPosition: Position): number {
+		return otherPosition.y - this.position.y;
 	}
 }
