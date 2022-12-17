@@ -23,6 +23,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Bauke Westendorp: Ray-marching</title>
+</svelte:head>
+
 <h2>Ray-marching</h2>
 
 <div bind:this={wrapper} class="wrapper">
