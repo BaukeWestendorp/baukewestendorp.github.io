@@ -6,6 +6,12 @@
 	export let data: { projects: Project[] };
 </script>
 
+<svelte:head>
+	<title>Bauke Westendorp: Projecten</title>
+</svelte:head>
+
+<h2>Projecten</h2>
+
 <div class="projects-grid">
 	{#each data.projects as project}
 		<Link href="projecten/{project.link}">
@@ -23,14 +29,15 @@
 <style>
 	.projects-grid {
 		display: flex;
+		flex-direction: column;
+		gap: 2rem;
 	}
 
 	.project {
 		border: 1px solid var(--c-accent);
-		margin-top: 2rem;
 	}
 
-	h2 {
+	.project h2 {
 		padding: 0.5rem 1rem;
 		background: var(--c-accent);
 		color: var(
