@@ -1,0 +1,1 @@
+const o=async({fetch:e})=>({projects:await(await e("/projects/projects.json")).json()}),r=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{r as _,o as l};

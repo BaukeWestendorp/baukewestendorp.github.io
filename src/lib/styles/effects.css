@@ -1,0 +1,11 @@
+@media not screen and (hover: none) and (pointer: coarse) {
+	.hoverable:hover {
+		opacity: 0.8;
+		scale: 0.95;
+	}
+}
+
+.hoverable {
+	cursor: pointer;
+	transition: 0.1s scale;
+}

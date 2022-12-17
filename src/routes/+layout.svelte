@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '$lib/styles/main.css';
 	import '$lib/styles/typography.css';
+	import '$lib/styles/effects.css';
 
 	import NavBar from '$lib/nav/NavBar.svelte';
 

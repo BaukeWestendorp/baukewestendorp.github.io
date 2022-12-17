@@ -25,7 +25,7 @@
 	<p class="quote">"{post.quote}"</p>
 {:else}
 	<img
-		class="thumbnail"
+		class="thumbnail hoverable"
 		src="{base}/posts/images/{post.image}"
 		alt={post.image}
 		on:click={() => (isSelected = true)}
@@ -52,16 +52,6 @@
 	.thumbnail {
 		width: 100%;
 		height: 100%;
-
-		cursor: pointer;
-		transition: 0.1s scale;
-	}
-
-	@media not screen and (hover: none) and (pointer: coarse) {
-		.thumbnail:hover {
-			opacity: 0.8;
-			scale: 0.95;
-		}
 	}
 
 	.enlargend {

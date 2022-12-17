@@ -6,6 +6,7 @@
 	<ul>
 		<li><Link href="/">expositie</Link></li>
 		<li><Link href="/over">over mij</Link></li>
+		<li><Link href="/projecten">projecten</Link></li>
 	</ul>
 </nav>
 
