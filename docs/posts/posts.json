@@ -1,5 +1,17 @@
 [
 	{
+		"date": "01-01-2023",
+		"image": "duur.jpg"
+	},
+	{
+		"date": "30-12-2022",
+		"image": "kast.jpg"
+	},
+	{
+		"date": "27-12-2022",
+		"image": "net.jpg"
+	},
+	{
 		"date": "25-12-2022",
 		"image": "kerst.jpg"
 	},
