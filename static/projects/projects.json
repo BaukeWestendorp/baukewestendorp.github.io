@@ -3,5 +3,10 @@
 		"title": "Ray marching",
 		"thumbnail": "raymarching.png",
 		"link": "raymarching"
+	},
+	{
+		"title": "NERF Gamemodes",
+		"thumbnail": "nerf-gamemodes.png",
+		"link": "nerf-gamemodes"
 	}
 ]
