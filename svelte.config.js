@@ -9,7 +9,6 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			strict: false,
 			pages: 'docs',
 			assets: 'docs'
 		})
