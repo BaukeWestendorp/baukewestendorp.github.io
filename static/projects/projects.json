@@ -2,11 +2,11 @@
 	{
 		"title": "Ray marching",
 		"thumbnail": "raymarching.png",
-		"link": "raymarching"
+		"link": "/projecten/raymarching"
 	},
 	{
 		"title": "NERF Gamemodes",
 		"thumbnail": "nerf-gamemodes.png",
-		"link": "nerf-gamemodes"
+		"link": "/nerf-gamemodes"
 	}
 ]

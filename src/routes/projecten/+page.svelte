@@ -14,7 +14,7 @@
 
 <div class="projects-grid">
 	{#each data.projects as project}
-		<Link href="projecten/{project.link}">
+		<Link href={project.link}>
 			<div class="project">
 				<h2>{project.title}</h2>
 
