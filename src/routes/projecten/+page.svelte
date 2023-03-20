@@ -1,9 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import Link from '$lib/link/Link.svelte';
-	import type { Project } from '$lib/projects/types';
-
-	export let data: { projects: Project[] };
 </script>
 
 <svelte:head>
@@ -11,45 +7,28 @@
 </svelte:head>
 
 <h2>Projecten</h2>
+<p>Dit is een lijst met een aantal projecten waar ik betrokken bij ben.</p>
 
-<div class="projects-grid">
-	{#each data.projects as project}
-		<Link href={project.link}>
-			<div class="project">
-				<h2>{project.title}</h2>
+<section>
+	<h3>Impossible Robotics</h3>
+	<p>
+		<Link openInNewTab href="https://impossiblerobotics.nl">Impossible Robotics</Link> is een
+		<Link openInNewTab href="https://www.firstinspires.org/robotics/frc">FRC</Link>,
+		<Link openInNewTab href="https://first.global">FGC</Link> en
+		<Link openInNewTab href="https://www.firstinspires.org/robotics/ftc">FTC</Link>
+		robotica team waar ik begin 2019 me bij heb aangesloten als student. Inmiddels ben ik mentor en leer
+		ik met plezier jongeren een robot bouwen, programmeren en de teamspirit er in te houden.
+	</p>
+</section>
 
-				<div class="image-wrapper">
-					<img src="{base}/projects/images/{project.thumbnail}" alt={project.title} />
-				</div>
-			</div>
-		</Link>
-	{/each}
-</div>
-
-<style>
-	.projects-grid {
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
-
-	.project {
-		border: 1px solid var(--c-accent);
-	}
-
-	.project h2 {
-		padding: 0.5rem 1rem;
-		background: var(--c-accent);
-		color: var(
-			--c-primary
-		); /* this shouldn't be necessary if we find a better way to style <Link/> components */
-	}
-
-	.image-wrapper {
-		padding: 0.5rem;
-	}
-	img {
-		width: 100%;
-		display: block;
-	}
-</style>
+<section>
+	<h3>Linkage</h3>
+	<p>
+		<Link openInNewTab href="https://github.com/Impossible-Robotics-5412/linkage">Linkage</Link> is een
+		experimenteel Robot Control System ontworpen om het programmeren van een robot simpel, overzichtelijk
+		en toegankelijk te maken voor iedereen. Linkage is bedacht om de overpriced hardware voor
+		<Link openInNewTab href="https://www.firstinspires.org/robotics/frc">FRC</Link> competities te vervangen
+		voor off-season evenementen zodat de dure hardware ieder jaar kan worden hergebruikt voor een nieuwe
+		robot.
+	</p>
+</section>

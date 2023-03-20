@@ -13,5 +13,5 @@
 	target={openInNewTab ? '_blank' : ''}
 	rel={openInNewTab ? 'noopener noreferrer' : ''}
 >
-	{#if openInNewTab}<span title="Opens in a new tab">> </span>{/if}<slot />
+	<slot />
 </a>
