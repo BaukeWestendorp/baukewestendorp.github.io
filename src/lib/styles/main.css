@@ -17,8 +17,8 @@
 }
 
 body {
-	background: black;
-	color: white;
+	background: var(--c-background);
+	color: car(--c-primary);
 }
 
 button {
