@@ -2,6 +2,7 @@
 	import '$lib/styles/main.css';
 	import '$lib/styles/typography.css';
 	import '$lib/styles/effects.css';
+	import Link from '$lib/link/Link.svelte';
 
 	import NavBar from '$lib/nav/NavBar.svelte';
 
@@ -20,6 +21,19 @@
 	</header>
 
 	<slot />
+
+	<footer>
+		<div class="webring">
+			<span>↼ <Link href="http://stupidplusplus.com/">pelle</Link></span>
+			<p>
+				this site is a part of the ♡ <Link
+					href="https://dwangschematiek.nl/webring/"
+					target="_blank">dwangschematiek webring</Link
+				> ♡
+			</p>
+			<span><Link href="https://dwangschematiek.nl/">ma3ke</Link> ⇀</span>
+		</div>
+	</footer>
 </div>
 
 <style>
@@ -41,5 +55,16 @@
 		max-width: 34rem;
 		padding: 1rem;
 		margin: auto;
+	}
+
+	footer {
+		margin-top: 1rem;
+	}
+
+	.webring {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
 	}
 </style>
