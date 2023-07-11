@@ -28,11 +28,13 @@
 			<p>
 				this site is a part of the ♡ <Link
 					href="https://dwangschematiek.nl/webring/"
-					target="_blank">dwangschematiek webring</Link
-				> ♡
+					target="_blank"
+					>dwangschematiek webring
+				</Link>♡
 			</p>
 			<span><Link href="https://dwangschematiek.nl/">ma3ke</Link> ⇀</span>
 		</div>
+		<a rel="me" href="https://hachyderm.io/@orkapoes">Mastodon</a>
 	</footer>
 </div>
 
