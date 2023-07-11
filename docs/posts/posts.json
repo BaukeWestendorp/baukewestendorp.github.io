@@ -1,5 +1,13 @@
 [
 	{
+		"date": "10-07-2023",
+		"image": "jane.jpg"
+	},
+	{
+		"date": "06-05-2023",
+		"image": "bef.jpg"
+	},
+	{
 		"date": "14-3-2023",
 		"image": "falcon.jpg"
 	},
@@ -68,6 +76,10 @@
 		"image": "bergweg.jpg"
 	},
 	{
+		"date": "18-10-2022",
+		"image": "challotje.jpg"
+	},
+	{
 		"date": "17-10-2022",
 		"image": "geneve_vliegveld.jpg"
 	},
@@ -90,6 +102,10 @@
 	{
 		"date": "22-08-2022",
 		"image": "testfase.jpg"
+	},
+	{
+		"date": "22-06-2022",
+		"image": "nacho.jpg"
 	},
 	{
 		"date": "27-06-2022",
