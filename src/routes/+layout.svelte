@@ -26,15 +26,14 @@
 		<div class="webring">
 			<span>↼ <Link href="http://stupidplusplus.com/">pelle</Link></span>
 			<p>
-				this site is a part of the ♡ <Link
-					href="https://dwangschematiek.nl/webring/"
-					target="_blank"
-					>dwangschematiek webring
-				</Link>♡
+				<span>part of the</span>
+				<Link href="https://dwangschematiek.nl/webring/" openInNewTab>dwangschematiek webring</Link>
 			</p>
 			<span><Link href="https://dwangschematiek.nl/">ma3ke</Link> ⇀</span>
 		</div>
-		<a rel="me" href="https://hachyderm.io/@orkapoes">Mastodon</a>
+		<div class="socials">
+			<Link rel="me" href="https://hachyderm.io/@orkapoes">Mastodon</Link>
+		</div>
 	</footer>
 </div>
 
@@ -67,6 +66,23 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		align-items: baseline;
+		align-items: center;
+
+		padding-bottom: 0.5rem;
+		border-bottom: 1px dashed var(--c-primary);
+	}
+
+	@media (max-width: 34rem) {
+		.webring p {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	.socials {
+		padding-top: 0.5rem;
+		display: flex;
+		justify-content: space-around;
 	}
 </style>
