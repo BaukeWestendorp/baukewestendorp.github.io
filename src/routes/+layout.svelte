@@ -24,7 +24,7 @@
 
 	<footer>
 		<div class="webring">
-			<span>↼ <Link href="http://stupidplusplus.com/">pelle</Link></span>
+			<span>↼ <Link href="http://stupidplusplus.com/">palle</Link></span>
 			<p>
 				<span>part of the</span>
 				<Link href="https://dwangschematiek.nl/webring/" openInNewTab>dwangschematiek webring</Link>
