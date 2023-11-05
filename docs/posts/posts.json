@@ -1,7 +1,59 @@
 [
 	{
+		"date": "27-10-2023",
+		"image": "wave1.jpg"
+	},
+	{
+		"date": "27-10-2023",
+		"image": "wave2.jpg"
+	},
+	{
+		"date": "27-10-2023",
+		"image": "wave3.jpg"
+	},
+	{
+		"date": "03-10-2023",
+		"image": "nat.jpg"
+	},
+	{
+		"date": "29-09-2023",
+		"image": "vera.jpg"
+	},
+	{
+		"date": "23-09-2023",
+		"image": "nieuwjaarsafter.jpg"
+	},
+	{
+		"date": "12-09-2023",
+		"image": "opperdepop.jpg"
+	},
+	{
+		"date": "07-08-2023",
+		"image": "huft.jpg"
+	},
+	{
+		"date": "05-08-2023",
+		"image": "rgb.jpg"
+	},
+	{
+		"date": "02-08-2023",
+		"image": "68.jpg"
+	},
+	{
+		"date": "21-07-2023",
+		"image": "riko.jpg"
+	},
+	{
+		"date": "21-07-2023",
+		"image": "tommie.jpg"
+	},
+	{
 		"date": "15-07-2023",
 		"image": "vleermuis.jpg"
+	},
+	{
+		"date": "11-07-2023",
+		"image": "kurk.jpg"
 	},
 	{
 		"date": "10-07-2023",
@@ -16,23 +68,35 @@
 		"image": "botaan.jpg"
 	},
 	{
+		"date": "07-05-2023",
+		"image": "slokdarm.jpg"
+	},
+	{
 		"date": "06-05-2023",
 		"image": "bef.jpg"
 	},
 	{
-		"date": "14-3-2023",
+		"date": "06-04-2023",
+		"image": "deur.jpg"
+	},
+	{
+		"date": "06-04-2023",
+		"image": "bubbel.jpg"
+	},
+	{
+		"date": "14-03-2023",
 		"image": "falcon.jpg"
 	},
 	{
-		"date": "14-3-2023",
+		"date": "14-03-2023",
 		"image": "brrrr.jpg"
 	},
 	{
-		"date": "13-3-2023",
+		"date": "13-03-2023",
 		"image": "fabricius.jpg"
 	},
 	{
-		"date": "25-2-2023",
+		"date": "25-02-2023",
 		"image": "raaf.jpg"
 	},
 	{
@@ -94,6 +158,10 @@
 	{
 		"date": "17-10-2022",
 		"image": "geneve_vliegveld.jpg"
+	},
+	{
+		"date": "17-10-2022",
+		"image": "kern.jpg"
 	},
 	{
 		"date": "17-10-2022",
