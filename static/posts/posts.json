@@ -1,6 +1,14 @@
 [
 	{
-		"date": "27-11-2023",
+		"date": "16-11-2023",
+		"image": "driehoed.jpg"
+	},
+	{
+		"date": "16-11-2023",
+		"image": "gokke.jpg"
+	},
+	{
+		"date": "27-10-2023",
 		"image": "pastpesies.jpg"
 	},
 	{
@@ -50,6 +58,10 @@
 	{
 		"date": "21-07-2023",
 		"image": "tommie.jpg"
+	},
+	{
+		"date": "16-07-2023",
+		"image": "elixer.jpg"
 	},
 	{
 		"date": "15-07-2023",
@@ -122,6 +134,10 @@
 	{
 		"date": "25-12-2022",
 		"image": "kerst.jpg"
+	},
+	{
+		"date": "27-12-2022",
+		"image": "bijenlint.jpg"
 	},
 	{
 		"date": "17-12-2022",
